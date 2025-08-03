@@ -21,7 +21,7 @@ export function getScore(temp, rain, wind, visibility, heatIndex, tideLevel){
   if (heatIndex > 40) score += 2;
   else if (heatIndex >= 35) score += 1;
 
-  // Tide Level can be hardcoded/mock or fetched from additional data source
+  // Tide Level can be hardcoded/mock or fetched from additional data source nt avaiabe in free api 
   if (tideLevel === 'extreme') score += 2;
   else if (tideLevel === 'high') score += 1;
 

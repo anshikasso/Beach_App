@@ -78,8 +78,8 @@ export default function WeatherSafety() {
           <Text>Rain (last 1h): {weather.rain} mm</Text>
           <Text>Wind: {(weather.wind * 3.6).toFixed(1)} km/h</Text>
           <Text>Visibility: {(weather.visibility / 1000).toFixed(1)} km</Text>
-          <Text>Heat Index: {weather.heat}°C</Text>
-          <Text>Tide: {weather.tide}</Text>
+          <Text>Heat Index: {weather.heat}°C</Text> // "feels like" temperature in free tier.
+          <Text>Tide: {weather.tide}</Text> //not included in free plan of api
           <Text>{status}</Text>
         </View>
       )}
